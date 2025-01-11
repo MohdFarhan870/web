@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Blog</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to My Blog</h1>
+    </header>
+    <main>
+        <section>
+            <h2>New Article</h2>
+            <form id="article-form">
+                <label for="title">Title:</label>
+                <input type="text" id="title" name="title" required>
+                <label for="content">Content:</label>
+                <textarea id="content" name="content" required></textarea>
+                <label for="media">Upload Media:</label>
+                <input type="file" id="media" name="media" accept="image/*, video/*">
+                <button type="submit">Publish</button>
+            </form>
+        </section>
+        <section id="articles">
+            <h2>Articles</h2>
+            <div id="article-list"></div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 My Blog</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
